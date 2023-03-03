@@ -5,5 +5,5 @@ router = APIRouter(tags=["project"], prefix="/projects")
 
 
 @router.get("/")
-async def get_projects():
-    return await fetch_all_projects()
+def get_projects():
+    return fetch_all_projects()
